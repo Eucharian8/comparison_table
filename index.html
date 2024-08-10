@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 12px;
+            border-spacing: 20px;
+        }
+        table {
+            width: 80%;
+            border-spacing: 20px;
+        }
+        th{
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            height: 50px;
+            background-color:beige;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Product Table</h3>
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: #e6e6e6;">
+        </colgroup>
+        <tr>
+            <th style="width: 20%;"> </th>
+            <th style="width: 20%;">Product Name</th>
+            <th style="width: 30%;" colspan="2">Features</th>
+            <th style="width: 20%;">Rating</th>
+            <th style="width: 20%;">Availability</th>
+        </tr>
+        <tr>
+            <th>Product 1</th>
+            <td rowspan="2">Redmi</td>
+            <td>128GB storage</td>
+            <td>$159.99</td>
+            <td>4.5</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <th>Product 2</th>
+            <td>512GB storage</td>
+            <td>$399.99</td>
+            <td>4.6</td>
+            <td>Out of Stock</td>
+        </tr>
+        <tr>
+            <th>Product 3</th>
+            <td>Iphone 14 pro max</td>
+            <td>Latest ios 18, Triple camera</td>
+            <td>$999.99</td>
+            <td>4.8</td>
+            <td>Out of Stock</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
